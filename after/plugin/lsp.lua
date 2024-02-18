@@ -1,7 +1,7 @@
 require('mason').setup()
 
 require('mason-lspconfig').setup({
-  ensure_installed = { 
+  ensure_installed = {
 		"tsserver",
 		"cssls",
 		"cssmodules_ls",
@@ -10,7 +10,6 @@ require('mason-lspconfig').setup({
 		"html",
 		"jsonls",
 		"svelte",
-		"eslint"
 	}
 })
 
