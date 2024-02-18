@@ -1,2 +1,2 @@
-vim.cmd[[colorscheme onedark]]
+	vim.cmd[[colorscheme github_dark_dimmed]]
 
