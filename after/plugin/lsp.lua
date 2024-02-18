@@ -1,7 +1,17 @@
 require('mason').setup()
 
 require('mason-lspconfig').setup({
-  ensure_installed = { "tsserver" }
+  ensure_installed = { 
+		"tsserver",
+		"cssls",
+		"cssmodules_ls",
+		"unocss",
+		"dockerls",
+		"html",
+		"jsonls",
+		"svelte",
+		"eslint"
+	}
 })
 
 local lspconfig = require("lspconfig")
