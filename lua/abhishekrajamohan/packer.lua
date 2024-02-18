@@ -7,6 +7,16 @@ return require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
+	use({
+		"startup-nvim/startup.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+		config = function()
+			require("startup").setup(require("abhishekrajamohan.startup_nvim"))
+		end,
+	})
+
+	use 'mfussenegger/nvim-dap'
+
 	use({ "projekt0n/github-nvim-theme" })
 	use({
 		"nvim-telescope/telescope.nvim",
