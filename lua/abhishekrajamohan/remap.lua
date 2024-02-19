@@ -2,9 +2,6 @@ local telescope = require('telescope.builtin')
 
 vim.g.mapleader = " "
 
--- Telescope remaps
-vim.keymap.set("n", "<leader><leader>", telescope.find_files, { noremap = true, silent = true })
-
 vim.keymap.set("n", "<leader>b", "<CMD>Neotree source=filesystem toggle=true<CR>", { noremap = true, silent = true })
 
 -- Remap cmd+/ to comment and compile with gcc in normal and insert mode

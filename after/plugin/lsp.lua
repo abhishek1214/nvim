@@ -11,6 +11,8 @@ require('mason-lspconfig').setup({
 })
 
 local lspconfig = require("lspconfig")
+
+lspconfig.tailwindcss.setup({})
 lspconfig.lua_ls.setup({})
 lspconfig.tsserver.setup({
 	on_attach = on_attach,

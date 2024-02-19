@@ -15,7 +15,35 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	use 'mfussenegger/nvim-dap'
+	use("lewis6991/gitsigns.nvim")
+	use("ThePrimeagen/vim-be-good")
+	use("lukas-reineke/indent-blankline.nvim")
+	use("hrsh7th/cmp-nvim-lsp")
+
+	use({
+		"L3MON4D3/LuaSnip",
+		requires = {
+			"saadparwaiz1/cmp_luasnip",
+			"rafamadriz/friendly-snippets",
+		},
+	})
+
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+			require("which-key").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+
+	use("hrsh7th/nvim-cmp")
+
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 
 	use({ "projekt0n/github-nvim-theme" })
 	use({
