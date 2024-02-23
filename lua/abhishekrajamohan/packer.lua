@@ -20,6 +20,8 @@ return require("packer").startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("hrsh7th/cmp-nvim-lsp")
 
+	use 'romgrk/barbar.nvim'
+
 	use({
 		"L3MON4D3/LuaSnip",
 		requires = {
